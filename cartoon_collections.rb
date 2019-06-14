@@ -7,10 +7,12 @@ dwarves = %w[
   Sleepy
   Happy
 ]
-def roll_call_dwarves(array)
-  array.each_with_index do |dwarf, index|
-    puts "{index + 1}. #{dwarf}"
+  dwarves.each_with_index do |dwarf, index|
+    puts "#{index + 1}. #{dwarf}"
+  end
 end
+
+roll_call_dwarves(dwarves)
 
 def summon_captain_planet# code an argument here
   # Your code here
